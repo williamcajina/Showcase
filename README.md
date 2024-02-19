@@ -34,6 +34,7 @@ Video [here](https://www.youtube.com/shorts/jHUD9r2OUSs?feature=share)
 
 ## GameOfLife
 This project showcases cellular automata. It was developed using WinForms.
+![Game of Life](https://github.com/williamcajina/Showcase/blob/a80eb8c4ecd4d47d526f905d47caabc13b4d7afa/GameOfLife/sc0.png)
 
 ## Open Ai Tool (In progress)
 This tool leverages the OpenAI API to create an image editor and generator. I'm also planning to implement other AI methods from different AI APIs for revoicing and music editing. This project is being developed in C# MAUI.
