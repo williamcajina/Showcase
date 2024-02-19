@@ -31,6 +31,7 @@ These are 2 similar games that I developed for a company for marketing purposes.
 ## Warlock's EndGame Game (In progress)
 Warlock's EndGame is a multiplayer game I'm currently working on. It uses Unity Netcode and Relay and will be a cross-platform battle game.
 Video [here](https://www.youtube.com/shorts/jHUD9r2OUSs?feature=share)
+![Warlock's Endgame](https://github.com/williamcajina/Showcase/blob/2e3965ab36669509422aee30352fbf196f914031/Warlock's%20EndGame%20Game%20(in%20progress)/sc.png)
 
 ## GameOfLife
 This project showcases cellular automata. It was developed using WinForms.
