@@ -1,0 +1,80 @@
+﻿<UserControl
+    x:Class="OpenWpf.Views.ConversationListItemView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:System="clr-namespace:System;assembly=System.Runtime"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <System:Double x:Key="StackPanelHeight1">30</System:Double>
+    </UserControl.Resources>
+    <StackPanel
+        Height="{DynamicResource ConversationHeight}"
+        HorizontalAlignment="Right"
+        VerticalAlignment="Top"
+        Orientation="Horizontal">
+        <TextBox
+            x:Name="conversationName"
+            Width="150"
+            Height="30"
+            HorizontalAlignment="Left"
+            VerticalContentAlignment="Center"
+            d:Text="dsfgahdjfkshdshlkfhalkdjshfjkdsahfkljhsdlkjfhsdkjhfljkasdhfjlkhdfljkasdhjfkhsdkjlfhasldkjfhdsjaklfhlkjasdhfjkdshfladshljfkhsdlfdksahjdfkjldfs"
+            Background="{x:Null}"
+            BorderBrush="{x:Null}"
+            BorderThickness="0,0,0,0"
+            Focusable="False"
+            FontSize="9"
+            Foreground="#FFFBFCFC"
+            IsReadOnly="True"
+            SelectionBrush="#FFFAFAFA"
+            Text="{Binding ConversationName}"
+            TextWrapping="WrapWithOverflow" />
+        <Button
+            x:Name="CheckMarkButton"
+            Width="24"
+            Height="24"
+            HorizontalAlignment="Right"
+            Background="{x:Null}"
+            BorderBrush="{x:Null}"
+            Click="CheckMarkClick"
+            Visibility="Collapsed">
+            <Image
+                Width="15"
+                Height="15"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="F:\VSP\OpenWpf\Views\images\Check.png" />
+        </Button>
+        <Button
+            x:Name="EditButton"
+            Width="24"
+            Height="24"
+            Background="{x:Null}"
+            BorderBrush="{x:Null}"
+            BorderThickness="0,1,0,1"
+            Click="EditClick">
+            <Image
+                Width="15"
+                Height="15"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Source="F:\VSP\OpenWpf\Views\images\Edit.png" />
+        </Button>
+        <Button
+            x:Name="DeleteButton"
+            Width="24"
+            Height="24"
+            Background="{x:Null}"
+            BorderBrush="{x:Null}"
+            CommandParameter="{Binding}">
+            <Image
+                Width="15"
+                Height="15"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Source="F:\VSP\OpenWpf\Views\images\Trash.png" />
+        </Button>
+    </StackPanel>
+</UserControl>

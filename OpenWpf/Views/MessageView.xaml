@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="OpenWpf.Views.MessageView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Foreground="{x:Null}"
+        mc:Ignorable="d">
+    <Grid Style="{DynamicResource GridStyleForMessaveView}">
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal">
+            <Image x:Name="IconThatRepresentsUser" Width="25" Height="20" VerticalAlignment="Top"
+                    Style="{DynamicResource ImageStyleForMEssageView}"/>
+            <TextBox x:Name="TextIfContentIsnotImageUrl" Width="556" Background="{x:Null}"
+                    BorderBrush="{x:Null}" FontSize="12"
+                    Foreground="{DynamicResource ChatGPTTEXTColor}" IsReadOnly="True"
+                    Text="{Binding Content}" TextWrapping="Wrap"
+                    Visibility="{Binding MessageVisibility}"/>
+            <Image x:Name="ImageIfContentIsUrl" Source="{Binding Content}"
+                    Visibility="{Binding ImageVisibility}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
