@@ -213,7 +213,7 @@ namespace AiDos.ViewModels
         {
             var isGranted = await SpeechToText.Default.RequestPermissions(CancellationToken.None);
             if (!isGranted)
-                throw new Exception("fuckl you");
+                throw new Exception("Error Listening");
 
             var recognitionResult = await SpeechToText.Default.ListenAsync(
                 CultureInfo.GetCultureInfo("en-US"),
@@ -226,7 +226,7 @@ namespace AiDos.ViewModels
             if (recognitionResult.IsSuccessful)
                 MessageText = recognitionResult.Text;
             else
-                throw new Exception("fuckl you");
+                throw new Exception("Error Listening");
 
         }
 
